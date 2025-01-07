@@ -1,7 +1,22 @@
 .header {
   display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
 }
 
 .activites-list {
   display: flex;
+  gap: 10px;
+}
+
+.activites{
+  list-style-type: none;
+}
+
+.women-gym {
+  width: 150px;
+  height: auto;
 }
