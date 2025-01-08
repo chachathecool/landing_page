@@ -1,3 +1,15 @@
+body,
+::before,
+::after {
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F2937;
+}
 /* HEADER */
 .header {
   display: flex;
@@ -13,10 +25,16 @@
   gap: 10px;
 }
 
-.activites{
+.activites {
   list-style-type: none;
+  font-size: 12px;
 }
 
+/* CONTENU*/
+
+.contenu {
+  flex: 1;
+}
 /* HERO SECTION */
 
 .hero-section {
@@ -27,6 +45,7 @@
 .hero-left {
   width: 50%;
 }
+
 h1 {
   font-size: 12px;
 }
@@ -36,12 +55,97 @@ h1 {
 }
 
 button {
-  width: 70px;
+  width: 55px;
   height: auto;
   font-size: 8px;
+  padding: 2px;
 }
 
 .women-gym {
   width: 160px;
   height: auto;
+}
+
+/* INFOS SECTION */
+
+h2 {
+  font-size: 10px;
+  text-align: center;
+}
+
+.info-photo {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+
+.infos-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.info {
+  list-style-type: none;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 8px;
+}
+
+/* CITATION SECTION */
+.citation-section {
+  display: flex;
+  justify-content: center;
+}
+.citation-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 320px;
+}
+.citation-text,
+.citation-source {
+  font-size: 10px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.citation-text {
+  font-style: italic;
+  text-align: right;
+}
+
+.citation-source {
+  font-weight: 800;
+}
+
+/* CALL TO ACTION SECTION */
+
+h3 {
+  font-size: 10px;
+}
+.call-action-section {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.action-text {
+  font-size: 8px;
+}
+
+.action-button {
+  align-self: center;
+}
+
+/* FOOTER */
+
+.footer-text {
+  text-align: center;
+  font-size: 7px;
 }
