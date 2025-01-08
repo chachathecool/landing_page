@@ -1,3 +1,7 @@
+* {
+  font-family: Consolas;
+}
+
 body,
 ::before,
 ::after {
@@ -8,16 +12,39 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.header,
+.hero-section,
+.infos-section,
+.citation-section,
+.call-action-section,
+.footer {
+  padding: 20px 40px;
+}
+
+.header,
+.hero-section,
+.footer {
   background-color: #1F2937;
 }
+
+button,
+.call-action-section {
+  background-color: #3882F6;
+}
+
 /* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
+  color: #E5E7EB;
+  padding: 0 40px;
 }
 
 .logo {
   width: 40px;
+  filter: invert(100%) sepia(13%) saturate(1958%) hue-rotate(202deg) brightness(120%) contrast(95%);
 }
 
 .activites-list {
@@ -32,14 +59,27 @@ body {
 
 /* CONTENU*/
 
-.contenu {
+.contenu,
+.contenu-fin {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
+
+.contenu {
+  background-color: #F9FAF8;
+}
+
+.contenu-fin {
+  justify-content: space-around;
+}
+
 /* HERO SECTION */
 
 .hero-section {
   display: flex;
   justify-content: space-between;
+  color: #F9FAF8;
 }
 
 .hero-left {
@@ -58,7 +98,11 @@ button {
   width: 55px;
   height: auto;
   font-size: 8px;
-  padding: 2px;
+  padding: 3px;
+  box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  color: #F9FAF8;
 }
 
 .women-gym {
@@ -67,6 +111,12 @@ button {
 }
 
 /* INFOS SECTION */
+
+
+.infos-section {
+  background-color: #F9FAF8;
+  padding-bottom: 2px;
+}
 
 h2 {
   font-size: 10px;
@@ -98,13 +148,16 @@ h2 {
 .citation-section {
   display: flex;
   justify-content: center;
+  background-color: #E5E7EB;
 }
+
 .citation-elements {
   display: flex;
   flex-direction: column;
   align-items: end;
   width: 320px;
 }
+
 .citation-text,
 .citation-source {
   font-size: 10px;
@@ -132,7 +185,7 @@ h3 {
 .call-action-section {
   display: flex;
   justify-content: space-around;
-  flex-grow: 1;
+  color: #F9FAF8;
 }
 
 .action-text {
@@ -141,11 +194,13 @@ h3 {
 
 .action-button {
   align-self: center;
+  border: 1px #F9FAF8 solid;
 }
 
 /* FOOTER */
 
 .footer-text {
+  color: #F9FAF8;
   text-align: center;
   font-size: 7px;
 }
